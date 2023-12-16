@@ -12,7 +12,7 @@ def load_data(url):
 model = joblib.load('model/ml_pipeline.pkl')
 
 # Загрузка данных из CSV файла
-data = load_data('car_data.csv')
+data = load_data('data/car_data.csv')
 
 # Создание пустой Series для хранения выбранных параметров
 selected_features = pd.Series(index = model.feature_names_in_)
